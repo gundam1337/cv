@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%
+% This CV template uses altacv.cls
+%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% Change the colours if you want to
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey} 
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+\name{Omar Derkaoui}
+\tagline{Full Stack Developer}
+\personalinfo{%
+  \email{omarderkaoui1337@gmail.com}
+  \phone{0762674942}
+  \github{github.com/gundam1337}
+  \homepage{omarderkaoui.cc}
+}
+
+%% Make the header extend all the way to the right
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Sidebar content is in page1sidebar.tex
+\cvsection[page1sidebar]{Professional Experience}
+
+\cvevent{Full-stack Developer}{FinaMaze}{Feb 2025 -- Present}{Casablanca, Morocco}
+\begin{itemize}
+\item Developed and maintained full-stack features for the FinaMaze platform.
+\item Collaborated with cross-functional teams to design and implement scalable web solutions.
+\item Worked on both front-end interfaces and back-end APIs in a full-time capacity.
+\end{itemize}
+\divider
+
+\cvevent{Backend Developer}{AIKON Mobile App}{Oct 2024 -- Feb 2025}{Remote}
+\begin{itemize}
+\item Worked as a backend developer for the AIKON mobile app (``Connecting Traders''), responsible for designing and implementing RESTful APIs, database schemas, and integration with trading services.
+\item Part-time role contributing to a fast-paced startup environment.
+\end{itemize}
+\divider
+
+\cvevent{Full Stack Engineer}{Upwork (Freelance)}{Feb 2022 -- Oct 2024}{Remote}
+\begin{itemize}
+\item Delivered full-stack web development projects for diverse clients on the Upwork platform.
+\item Built user interfaces and robust back-end services using modern web technologies.
+\item Managed client relationships from requirements gathering to final delivery.
+\end{itemize}
+\divider
+
+\cvevent{Mathematics Teacher}{Minist\`ere de l'\'Education Nationale (Maroc)}{Sep 2021 -- May 2024}{Beni Mellal, Morocco}
+\begin{itemize}
+\item Taught mathematics to high school students, developing lesson plans and assessing student performance.
+\item On-site full-time position within the Moroccan national education system.
+\end{itemize}
+
+\cvsection{Education}
+
+\cvevent{Bachelor of Science and Technology}{FST Beni Mellal}{2015 -- 2019}{Beni Mellal, Morocco}
+\begin{itemize}
+\item Electronic Engineering and Telecommunications. Comprehensive program covering electronics, telecommunications, information processing, and industrial computing.
+\end{itemize}
+
+\divider
+
+\cvevent{Junior Developer Program}{1337 Coding School}{Dec 2018 -- Jun 2022}{}
+\begin{itemize}
+\item Innovative IT training based on peer-learning and project-based learning. Gained hands-on experience in coding and creative problem-solving.
+\end{itemize}
+
+\medskip
+
+\end{document}
