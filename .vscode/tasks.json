@@ -2,10 +2,10 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build LaTeX (main.tex)",
+      "label": "Build LaTeX (cv.en.tex)",
       "type": "shell",
       "command": "latexmk",
-      "args": ["-pdf", "main.tex"],
+      "args": ["-pdf", "cv.en.tex"],
       "group": {
         "kind": "build",
         "isDefault": true
