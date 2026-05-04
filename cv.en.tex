@@ -18,7 +18,7 @@
 \definecolor{LightGrey}{HTML}{666666}
 \colorlet{heading}{Navy}
 \colorlet{accent}{Navy}
-\colorlet{emphasis}{SlateGrey} 
+\colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
 % Change the bullets for itemize and rating marker
@@ -28,10 +28,10 @@
 \begin{document}
 
 \name{Omar Derkaoui}
-\tagline{Full Stack Developer}
+\tagline{Backend Software Engineer}
 \personalinfo{%
   \email{omarderkaoui1337@gmail.com}
-  \phone{0762674942}
+  \phone{+212 6 76 26 74 94}
   \github{github.com/gundam1337}
   \homepage{omarderkaoui.cc}
 }
@@ -42,49 +42,68 @@
 \end{fullwidth}
 
 %% Sidebar content is in page1sidebar.tex
-\cvsection[page1sidebar]{Professional Experience}
+\cvsection[page1sidebar]{Profile}
 
-\cvevent{Full-stack Developer}{FinaMaze}{Feb 2025 -- Present}{Casablanca, Morocco}
+Backend-focused software engineer with a track record of shipping production features in fintech and trading platforms. Specialized in NestJS, PostgreSQL/Oracle, and integrating complex legacy banking systems. 1337 Coding School graduate with strong systems fundamentals from C/C++ and a background in mathematics that brings rigor to backend architecture and problem-solving.
+
+\cvsection{Professional Experience}
+
+\cvevent{Backend Software Engineer}{FinaMaze --- AI-driven Investment Platform}{Feb 2025 -- Present}{Casablanca, Morocco}
 \begin{itemize}
-\item Developed and maintained full-stack features for the FinaMaze platform.
-\item Collaborated with cross-functional teams to design and implement scalable web solutions.
-\item Worked on both front-end interfaces and back-end APIs in a full-time capacity.
+\item Joined as the first backend contributor on a B2B fintech platform serving a major Middle Eastern bank, where AI-driven asset managers build, rebalance, and oversee investment portfolios for the bank's clients.
+\item Owned end-to-end design and delivery of the onboarding and KYC module, integrating with the bank's legacy SOAP APIs --- reverse-engineering undocumented endpoints without a sandbox environment to ship a working flow into UAT.
+\item Designed Oracle database schemas from scratch for authentication, user onboarding, notifications, and messaging modules; optimized critical queries through targeted indexing strategies.
+\item Built the notifications and messaging subsystems, including background jobs and queue-based dispatch for asynchronous delivery at scale.
+\item Implemented JWT/Passport authentication, login and registration flows, and instrumented services with Prometheus for production monitoring.
+\item Took 6 features through UAT and pre-production while collaborating across a 24-person engineering organization (backend, frontend, DevOps, QA).
 \end{itemize}
 \divider
 
-\cvevent{Backend Developer}{AIKON Mobile App}{Oct 2024 -- Feb 2025}{Remote}
+\cvevent{Backend Developer}{AIKON Mobile App --- \textit{Connecting Traders}}{Oct 2024 -- Feb 2025}{Remote}
 \begin{itemize}
-\item Worked as a backend developer for the AIKON mobile app (``Connecting Traders''), responsible for designing and implementing RESTful APIs, database schemas, and integration with trading services.
-\item Part-time role contributing to a fast-paced startup environment.
+\item Contributed backend features to an iOS social-trading platform that combines messaging and trading workflows in a single mobile experience.
+\item Designed and built the WhatsApp Business API integration and the surrounding business logic, enabling traders to engage with the platform through a familiar messaging channel.
+\item Implemented real-time chat assistance using Socket.io, allowing traders to communicate with support agents and other users without leaving the app.
+\item Modeled the PostgreSQL tables required for the messaging and integration features, and shipped them as part of the production backend.
+\item Implemented authentication flows with JWT and social login providers; collaborated remotely with a team of 3 backend, 2 frontend, and 1 DevOps engineer.
 \end{itemize}
 \divider
 
-\cvevent{Full Stack Engineer}{Upwork (Freelance)}{Feb 2024 -- Oct 2024}{Remote}
+\cvevent{Full Stack Engineer}{Upwork --- Freelance}{Feb 2024 -- Oct 2024}{Remote}
 \begin{itemize}
-\item Delivered full-stack web development projects for diverse clients on the Upwork platform.
-\item Built user interfaces and robust back-end services using modern web technologies.
-\item Managed client relationships from requirements gathering to final delivery.
+\item Delivered full-stack web projects end-to-end for international clients --- from requirements gathering and architecture through development, deployment, and handover.
+\item Built backend services with Node.js and Express alongside modern React frontends, handling authentication, data persistence, and third-party integrations.
+\item First commercial software engineering role; transitioned full-time into tech in February 2024 after 1337 Coding School.
 \end{itemize}
 \divider
 
-\cvevent{Mathematics Teacher}{Minist\`ere de l'\'Education Nationale (Maroc)}{Sep 2021 -- May 2024}{Beni Mellal, Morocco}
+\cvevent{Mathematics Teacher}{Ministry of National Education (Morocco)}{Sep 2021 -- May 2024}{Beni Mellal, Morocco}
 \begin{itemize}
-\item Taught mathematics to high school students, developing lesson plans and assessing student performance.
-\item On-site full-time position within the Moroccan national education system.
+\item Taught mathematics to high-school students for three years while transitioning into software engineering through 1337 Coding School --- developed strong skills in breaking down complex concepts, which now translate directly into clear technical communication and documentation.
+\item Designed lesson plans, assessments, and progress tracking, demonstrating autonomy and rigor that carry over to backend system design.
+\end{itemize}
+
+\divider
+
+\cvevent{Chess Instructor}{Al Akhawayn School}{2018 -- 2019}{Beni Mellal, Morocco}
+\begin{itemize}
+\item Coached chess to children aged 6--10 at one of Beni Mellal's largest schools, designing age-appropriate exercises to develop strategic thinking and concentration.
+\item Competitive player with a peak blitz ELO of 2300.
 \end{itemize}
 
 \cvsection{Education}
 
-\cvevent{Bachelor of Science and Technology}{FST Beni Mellal}{2015 -- 2019}{Beni Mellal, Morocco}
+\cvevent{Computer Science --- Common Core}{1337 Coding School}{Dec 2018 -- Jun 2022}{Khouribga, Morocco}
 \begin{itemize}
-\item Electronic Engineering and Telecommunications. Comprehensive program covering electronics, telecommunications, information processing, and industrial computing.
+\item Completed the full common core of an intensive, peer-led, project-based program with no traditional lectures --- the Moroccan branch of 42 Network.
+\item Specialized in low-level systems and computer graphics with C and C++; notable project: a multi-threaded ray tracer rendering complex scenes with realistic lighting.
 \end{itemize}
 
 \divider
 
-\cvevent{Junior Developer Program}{1337 Coding School}{Dec 2018 -- Jun 2022}{}
+\cvevent{Bachelor of Science and Technology}{FST Beni Mellal}{2015 -- 2019}{Beni Mellal, Morocco}
 \begin{itemize}
-\item Innovative IT training based on peer-learning and project-based learning. Gained hands-on experience in coding and creative problem-solving.
+\item Electronic Engineering and Telecommunications. Coursework in electronics, signal processing, telecommunications, and industrial computing.
 \end{itemize}
 
 \medskip

@@ -1,0 +1,202 @@
+%% DnD 5e-styled CV for Omar Derkaoui
+%% Compile: TEXINPUTS=./lib//: pdflatex cv.dnd.tex
+
+\documentclass[10pt,a4paper,twoside,openany,nodeprecatedcode]{dndbook}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multicol}
+
+\hypersetup{urlcolor=PhbDarkRed}
+
+\begin{document}
+
+%% ── HEADER ──────────────────────────────────────────────────────────────────
+\begin{center}
+  {\fontsize{32}{38}\DndFontChapter\selectfont Omar Derkaoui}\\[6pt]
+  {\large\itshape Backend Software Engineer}\\[10pt]
+  {\small
+    \faEnvelope\;\href{mailto:omarderkaoui1337@gmail.com}{omarderkaoui1337@gmail.com}
+    \quad\textbar\quad
+    \faPhone\;+212\,6\,76\,26\,74\,94
+    \quad\textbar\quad
+    \faGithub\;\href{https://github.com/gundam1337}{github.com/gundam1337}
+    \quad\textbar\quad
+    \faGlobe\;\href{https://omarderkaoui.cc}{omarderkaoui.cc}
+  }
+\end{center}
+
+\vspace{4pt}
+
+%% ── ADVENTURER'S DOSSIER (Profile) ──────────────────────────────────────────
+\begin{DndReadAloud}
+  Backend-focused software engineer with a track record of shipping production features in
+  fintech and trading platforms. Specialized in NestJS, PostgreSQL/Oracle, and integrating
+  complex legacy banking systems. 1337 Coding School graduate with strong systems fundamentals
+  from C/C++ and a mathematical background that brings rigor to backend architecture and
+  problem-solving.
+\end{DndReadAloud}
+
+\vspace{6pt}
+
+%% ── TWO-COLUMN LAYOUT ───────────────────────────────────────────────────────
+\setlength{\columnsep}{18pt}
+\begin{multicols}{2}
+
+%% ── CHARACTER SHEET ─────────────────────────────────────────────────────────
+\begin{DndMonster}[width=\linewidth]{Omar Derkaoui}
+  \DndMonsterType{Backend Engineer, Chaotic Good}
+
+  \DndMonsterBasics[
+    armor-class = {Production-hardened (NestJS + Prometheus)},
+    hit-points  = {\DndDice{6d8+15} --- 6 UAT-tested features shipped},
+    speed       = {Ship fast. Debug faster. Iterate always.},
+  ]
+
+  \DndMonsterAbilityScores[
+    str = 10,
+    dex = 14,
+    con = 16,
+    int = 18,
+    wis = 14,
+    cha = 12,
+  ]
+
+  \DndMonsterDetails[
+    skills    = {API Design +8, DB Architecture +7, Legacy Integration +7, Systems Design +6},
+    senses    = {Darkvision (async flows 60\,ft), Truesight (legacy APIs)},
+    languages = {Arabic (Native), French (Prof.), English (Prof.)},
+    challenge = {Mid-level (3{,}900 XP)},
+  ]
+
+  \DndMonsterSection{Actions}
+
+  \DndMonsterAction{NestJS Mastery}
+  Shapes scalable backend services at will. Proficient in TypeORM, JWT/Passport, Redis queues,
+  Socket.io, and Prometheus instrumentation.
+
+  \DndMonsterAction{Database Architect}
+  Designs and optimizes PostgreSQL and Oracle schemas from scratch; uses targeted indexing to
+  eliminate query-latency bottlenecks.
+
+  \DndMonsterAction{Legacy Reverse-Engineering}
+  Integrates undocumented SOAP and REST APIs without sandbox access. Succeeds even on a failed
+  Intelligence check.
+
+  \DndMonsterSection{Bonus Actions}
+
+  \DndMonsterAction{Full Stack Surge (Recharge 5--6)}
+  Switches to Next.js 15, React 19, TypeScript, and Tailwind CSS when the front line falls.
+\end{DndMonster}
+
+%% ── SPELLBOOK (Skills) ───────────────────────────────────────────────────────
+\section{Spellbook}
+
+\begin{DndComment}{Backend Spells --- Known}
+  NestJS \textbullet{} Node.js \textbullet{} Express \textbullet{} PostgreSQL \textbullet{}
+  OracleDB \textbullet{} TypeORM \textbullet{} Redis \textbullet{} Socket.io \textbullet{}
+  JWT/Passport \textbullet{} Jest \textbullet{} Prometheus \textbullet{} Firebase Admin
+  \textbullet{} Nodemailer \textbullet{} Puppeteer
+\end{DndComment}
+
+\begin{DndComment}{Frontend Cantrips}
+  Next.js\,15 \textbullet{} React\,19 \textbullet{} TypeScript \textbullet{} Tailwind CSS
+  \textbullet{} Zustand \textbullet{} TanStack Query \textbullet{} Radix UI \textbullet{}
+  Framer Motion \textbullet{} Zod \textbullet{} Axios
+\end{DndComment}
+
+\begin{DndComment}{Equipment}
+  GitHub Actions \textbullet{} Docker
+\end{DndComment}
+
+%% ── TONGUES KNOWN (Languages) ───────────────────────────────────────────────
+\section{Tongues Known}
+
+\begin{DndTable}[header=Languages]{lX}
+  Language & Proficiency    \\
+  Arabic   & Native         \\
+  French   & Professional   \\
+  English  & Professional   \\
+\end{DndTable}
+
+%% ── LEGENDARY TRAITS (Hobbies) ──────────────────────────────────────────────
+\section{Legendary Traits}
+
+\begin{itemize}
+  \item \textbf{Grandmaster of the Chessboard} --- Peak blitz ELO 2300
+  \item \textbf{Seeker of Mathematical Truth} --- Geometry \& Olympiad problems
+\end{itemize}
+
+\columnbreak
+
+%% ── QUESTS \& CAMPAIGNS (Experience) ────────────────────────────────────────
+\section{Quests \& Campaigns}
+
+\DndFeatHeader{Backend Software Engineer}[FinaMaze \textbar{} Feb\,2025 -- Present \textbar{} Casablanca]
+\begin{itemize}
+  \item First backend contributor on a B2B fintech platform serving a major Middle Eastern bank,
+        where AI-driven asset managers build and rebalance investment portfolios.
+  \item Owned end-to-end design and delivery of the onboarding and KYC module, reverse-engineering
+        undocumented SOAP APIs without a sandbox environment.
+  \item Designed Oracle schemas for authentication, user onboarding, notifications, and messaging;
+        optimized critical queries with targeted indexing.
+  \item Built the notifications and messaging subsystems with background jobs and queue-based async
+        dispatch.
+  \item Implemented JWT/Passport authentication and Prometheus instrumentation.
+  \item Took 6 features through UAT and pre-production across a 24-person engineering organization.
+\end{itemize}
+
+\DndFeatHeader{Backend Developer}[AIKON Mobile App \textbar{} Oct\,2024 -- Feb\,2025 \textbar{} Remote]
+\begin{itemize}
+  \item Contributed backend features to an iOS social-trading platform combining messaging and
+        trading workflows in a single mobile experience.
+  \item Designed and built the WhatsApp Business API integration, enabling traders to engage
+        through a familiar messaging channel.
+  \item Implemented real-time chat with Socket.io; modeled the PostgreSQL schema for messaging
+        features and shipped them into production.
+  \item Implemented JWT and social login; collaborated with a 6-person cross-functional team.
+\end{itemize}
+
+\DndFeatHeader{Full Stack Engineer}[Upwork --- Freelance \textbar{} Feb\,2024 -- Oct\,2024 \textbar{} Remote]
+\begin{itemize}
+  \item Delivered full-stack web projects for international clients end-to-end: requirements
+        through deployment and handover.
+  \item Built Node.js/Express backends alongside React frontends with authentication and
+        third-party integrations.
+  \item First commercial software engineering role; transitioned full-time into tech after
+        1337 Coding School.
+\end{itemize}
+
+\DndFeatHeader{Mathematics Teacher}[Ministry of National Education \textbar{} Sep\,2021 -- May\,2024 \textbar{} Beni Mellal]
+\begin{itemize}
+  \item Taught mathematics to high-school students while transitioning into software engineering
+        through 1337 Coding School.
+  \item Developed strong skills in breaking down complex concepts --- directly applied to
+        technical communication and documentation.
+\end{itemize}
+
+\DndFeatHeader{Chess Instructor}[Al Akhawayn School \textbar{} 2018 -- 2019 \textbar{} Beni Mellal]
+\begin{itemize}
+  \item Coached chess to children aged 6--10; competitive player with a peak blitz ELO of 2300.
+\end{itemize}
+
+%% ── LORE \& TRAINING (Education) ────────────────────────────────────────────
+\section{Lore \& Training}
+
+\DndFeatHeader{Computer Science --- Common Core}[1337 Coding School \textbar{} Dec\,2018 -- Jun\,2022 \textbar{} Khouribga]
+\begin{itemize}
+  \item Intensive peer-led, project-based program (Moroccan branch of 42 Network); no lectures.
+  \item Specialized in low-level systems and computer graphics with C/C++; built a multi-threaded
+        ray tracer rendering complex scenes with realistic lighting.
+\end{itemize}
+
+\DndFeatHeader{BSc Electronic Engineering \& Telecommunications}[FST Beni Mellal \textbar{} 2015 -- 2019]
+\begin{itemize}
+  \item Coursework in electronics, signal processing, telecommunications, and industrial computing.
+\end{itemize}
+
+\end{multicols}
+
+\end{document}

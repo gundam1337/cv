@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%
-% CV en français — basé sur cv.en.tex
+% CV en français — version améliorée
 %%%%%%%%%%%%%%%%%
 
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
@@ -18,7 +18,7 @@
 \definecolor{LightGrey}{HTML}{666666}
 \colorlet{heading}{Navy}
 \colorlet{accent}{Navy}
-\colorlet{emphasis}{SlateGrey} 
+\colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
 % Puces et marqueur de notation
@@ -28,10 +28,10 @@
 \begin{document}
 
 \name{Omar Derkaoui}
-\tagline{Développeur Full Stack}
+\tagline{Ingénieur Logiciel Backend}
 \personalinfo{%
   \email{omarderkaoui1337@gmail.com}
-  \phone{0762674942}
+  \phone{+212 6 76 26 74 94}
   \github{github.com/gundam1337}
   \homepage{omarderkaoui.cc}
 }
@@ -42,52 +42,70 @@
 \end{fullwidth}
 
 %% Contenu de la barre latérale dans page1sidebar.fr.tex
-\cvsection[page1sidebar.fr]{Expérience professionnelle}
+\cvsection[page1sidebar.fr]{Profil}
 
-\cvevent{Développeur Full Stack}{FinaMaze}{Fév. 2025 -- Présent}{Casablanca, Maroc}
+Ingénieur logiciel spécialisé backend avec un historique de livraison de fonctionnalités en production dans des plateformes fintech et de trading. Spécialisé dans NestJS, PostgreSQL/Oracle et l'intégration de systèmes bancaires legacy complexes. Diplômé de 1337 Coding School avec de solides fondamentaux systèmes en C/C++ et un parcours en mathématiques apportant rigueur et méthode à l'architecture backend et à la résolution de problèmes.
+
+\cvsection{Expérience professionnelle}
+
+\cvevent{Ingénieur Logiciel Backend}{FinaMaze --- Plateforme d'investissement pilotée par l'IA}{Fév. 2025 -- Présent}{Casablanca, Maroc}
 \begin{itemize}
-\item Développement et maintenance de fonctionnalités full stack pour la plateforme FinaMaze.
-\item Collaboration avec des équipes pluridisciplinaires pour concevoir et mettre en œuvre des solutions web évolutives.
-\item Travail à temps plein sur les interfaces front-end et les API back-end.
+\item Premier contributeur backend d'une plateforme fintech B2B au service d'une grande banque du Moyen-Orient, où des gestionnaires d'actifs basés sur l'IA construisent, rééquilibrent et supervisent des portefeuilles d'investissement pour les clients de la banque.
+\item Conception et livraison de bout en bout du module d'onboarding et KYC, avec intégration des APIs SOAP legacy de la banque --- rétro-ingénierie d'endpoints non documentés sans environnement sandbox pour livrer un flux fonctionnel en UAT.
+\item Conception des schémas de base de données Oracle depuis zéro pour les modules d'authentification, d'onboarding utilisateur, de notifications et de messagerie ; optimisation des requêtes critiques par des stratégies d'indexation ciblées.
+\item Développement des sous-systèmes de notifications et de messagerie, incluant des jobs en arrière-plan et une distribution asynchrone basée sur des files de messages.
+\item Implémentation de l'authentification JWT/Passport, des flux de connexion et d'inscription, et instrumentation des services avec Prometheus pour le monitoring en production.
+\item Conduite de 6 fonctionnalités jusqu'à l'UAT et la pré-production en collaboration avec une organisation de 24 ingénieurs (backend, frontend, DevOps, QA).
 \end{itemize}
 \divider
 
-\cvevent{Développeur Backend}{AIKON Mobile App}{Oct. 2024 -- Fév. 2025}{Télétravail}
+\cvevent{Développeur Backend}{AIKON Mobile App --- \textit{Connecting Traders}}{Oct. 2024 -- Fév. 2025}{Télétravail}
 \begin{itemize}
-\item Développeur backend pour l’application mobile AIKON (``Connecting Traders''), responsable de la conception et de l’implémentation d’API RESTful, de schémas de base de données et de l’intégration avec des services de trading.
-\item Poste à temps partiel dans un environnement startup dynamique.
+\item Contribution aux fonctionnalités backend d'une plateforme de social-trading iOS combinant messagerie et flux de trading dans une seule expérience mobile.
+\item Conception et développement de l'intégration de l'API WhatsApp Business et de la logique métier associée, permettant aux traders d'interagir avec la plateforme via un canal de messagerie familier.
+\item Implémentation d'une assistance en temps réel via Socket.io, permettant aux traders de communiquer avec des agents de support et d'autres utilisateurs sans quitter l'application.
+\item Modélisation des tables PostgreSQL pour les fonctionnalités de messagerie et d'intégration, livrées dans le backend de production.
+\item Implémentation des flux d'authentification JWT et des connexions via réseaux sociaux ; collaboration à distance avec une équipe de 3 backend, 2 frontend et 1 DevOps.
 \end{itemize}
 \divider
 
-\cvevent{Ingénieur Full Stack}{Upwork (Freelance)}{Fév. 2024 -- Oct. 2024}{Télétravail}
+\cvevent{Ingénieur Full Stack}{Upwork --- Freelance}{Fév. 2024 -- Oct. 2024}{Télétravail}
 \begin{itemize}
-\item Réalisation de projets de développement web full stack pour des clients variés sur la plateforme Upwork.
-\item Conception d’interfaces utilisateur et de services back-end robustes avec des technologies web modernes.
-\item Gestion de la relation client, de la collecte des besoins jusqu’à la livraison finale.
+\item Livraison de projets web full stack de bout en bout pour des clients internationaux --- du recueil des besoins et de l'architecture jusqu'au développement, déploiement et passation.
+\item Développement de services backend avec Node.js et Express et de frontends React modernes, incluant l'authentification, la persistance des données et les intégrations tierces.
+\item Premier rôle commercial en ingénierie logicielle ; transition à temps plein vers la tech en février 2024 après 1337 Coding School.
 \end{itemize}
 \divider
 
-\cvevent{Enseignant de mathématiques}{Minist\`ere de l'\'Education Nationale (Maroc)}{Sep. 2021 -- Mai 2024}{Beni Mellal, Maroc}
+\cvevent{Enseignant de mathématiques}{Ministère de l'Éducation Nationale (Maroc)}{Sep. 2021 -- Mai 2024}{Beni Mellal, Maroc}
 \begin{itemize}
-\item Enseignement des mathématiques à des lycéens, élaboration de plans de cours et évaluation des performances des élèves.
-\item Poste à temps plein sur site au sein du système d’éducation nationale marocain.
+\item Enseignement des mathématiques à des lycéens pendant trois ans, tout en effectuant une reconversion vers l'ingénierie logicielle via 1337 Coding School --- développement d'une capacité éprouvée à décomposer des concepts complexes, directement transférable à la communication technique et à la documentation.
+\item Élaboration de plans de cours, d'évaluations et de suivi des progrès, démontrant autonomie et rigueur qui se transposent directement à la conception de systèmes backend.
+\end{itemize}
+
+\divider
+
+\cvevent{Professeur d'échecs}{École Al Akhawayn}{2018 -- 2019}{Beni Mellal, Maroc}
+\begin{itemize}
+\item Enseignement des échecs à des enfants de 6 à 10 ans dans l'une des grandes écoles de Beni Mellal, avec des exercices adaptés à l'âge pour développer la pensée stratégique et la concentration.
+\item Joueur compétitif avec un ELO blitz maximum de 2300.
 \end{itemize}
 
 \cvsection{Formation}
 
-\cvevent{Licence en Sciences et Techniques}{FST Beni Mellal}{2015 -- 2019}{Beni Mellal, Maroc}
+\cvevent{Informatique --- Tronc Commun}{1337 Coding School}{Déc. 2018 -- Juin 2022}{Khouribga, Maroc}
 \begin{itemize}
-\item Génie électronique et télécommunications. Programme complet couvrant l’électronique, les télécommunications, le traitement de l’information et l’informatique industrielle.
+\item Completion du tronc commun d'un programme intensif, basé sur l'apprentissage entre pairs et la pédagogie par projet, sans cours magistraux --- la branche marocaine du réseau 42.
+\item Spécialisation en systèmes bas niveau et infographie avec C et C++ ; projet notable : un ray tracer multi-threadé rendant des scènes complexes avec un éclairage réaliste.
 \end{itemize}
 
 \divider
 
-\cvevent{Parcours Junior Developer}{1337 Coding School}{Déc. 2018 -- Juin 2022}{}
+\cvevent{Licence en Sciences et Techniques}{FST Beni Mellal}{2015 -- 2019}{Beni Mellal, Maroc}
 \begin{itemize}
-\item Formation informatique innovante basée sur l’apprentissage entre pairs et les projets. Expérience pratique en programmation et en résolution créative de problèmes.
+\item Génie électronique et télécommunications : électronique, traitement du signal, télécommunications et informatique industrielle.
 \end{itemize}
 
 \medskip
 
 \end{document}
-
